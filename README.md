@@ -23,7 +23,7 @@ copy .env.example to .env and setup your server configuration
   - access the website through a browser with the url http://localhost:3333
 
 Notes: before running web apps, please create database, and run [migration](https://laravel.com/docs/8.x/migrations) first.
-see: [Migration Docs]https://laravel.com/docs/8.x/migrations)
+see: [Migration Docs](https://laravel.com/docs/8.x/migrations)
 
 ## About Laravel
 
