@@ -1,6 +1,6 @@
 <?php $i = 0; ?>
 
-<table id="task-table" class="table table-striped table-bordered">
+<table id="task-table" class="table table-striped table-bordered nowrap">
     <thead>
     <tr>
         <th style="width: 10px">#</th>

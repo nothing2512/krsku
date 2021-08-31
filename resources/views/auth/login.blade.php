@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sks | login</title>
+    <title>KrsKu | login</title>
     <link rel="icon" href="{{ adminlte(LOGO) }}">
 
     <!-- Google Font: Source Sans Pro -->
@@ -24,7 +24,7 @@
         <div class="card-header text-center row">
             <img src="{{ adminlte(LOGO) }}" class="col-6"/>
             <div class="col-6 d-flex flex-column justify-content-center">
-                <a href="#" class="h1"><b>Sks</b></a>
+                <a href="#" class="h1"><b>KrsKu</b></a>
                 <a href="#" class="h2"><b>Login</b></a>
             </div>
         </div>

@@ -1,4 +1,4 @@
-<table id="certificate-table" class="table table-striped text-center table-bordered">
+<table id="certificate-table" class="table table-striped text-center table-bordered nowrap">
     <thead>
     <tr>
         <th style="width: 10px">#</th>

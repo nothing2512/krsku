@@ -482,9 +482,9 @@
 
         $("#presence-table")
             .DataTable({
-                responsive: true,
                 lengthChange: false,
                 autoWidth: false,
+                scrollX: true,
                 pageLength: 10,
                 columnDefs: [
                     {
@@ -508,9 +508,9 @@
 
         $("#team-table")
             .DataTable({
-                responsive: true,
                 lengthChange: false,
                 autoWidth: false,
+                scrollX: true,
                 pageLength: 10,
                 columnDefs: [
                     {

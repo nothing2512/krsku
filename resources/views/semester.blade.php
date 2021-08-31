@@ -55,9 +55,9 @@
         $(function () {
             $("#semester-table")
                 .DataTable({
-                    responsive: true,
                     lengthChange: false,
                     autoWidth: false,
+                    scrollX: true,
                     pageLength: 5,
                     columnDefs: [
                         {

@@ -1,5 +1,5 @@
 <?php $i = 0; ?>
-<table id="presence-table" class="table table-striped table-bordered">
+<table id="presence-table" class="table table-striped table-bordered nowrap">
     <thead>
     <tr>
         <th>#</th>
