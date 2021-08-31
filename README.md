@@ -29,7 +29,10 @@ Notes: before running web apps, please create database, and run [migration](http
 see: [Migration Docs](https://laravel.com/docs/8.x/migrations)
 
 ## Demonstration videos
-[![Demonstration videos](https://img.youtube.com/vi/VIDEO-ID/0.jpg)](./resources/demos/demonstration.mp4)
+<video width="480" controls>
+    <source src="./resources/demos/demonstration.mp4" type="video/mp4">
+    Video not supported on your browser
+</video>
 
 
 ## Warning !!
