@@ -21,7 +21,6 @@ class IncomingTasksView extends Migration
                     DATEDIFF(deadline, CURRENT_DATE),
                     DATEDIFF(CURRENT_DATE, deadline)
                 ) as deadlineDifference,
-                courses.name as courseName,
                 CURRENT_DATE > deadline as late
             FROM tasks_view task
             JOIN courses ON courses.id = task.courseId
