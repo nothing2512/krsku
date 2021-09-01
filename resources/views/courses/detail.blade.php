@@ -110,7 +110,7 @@
             </div>
         </div>
 
-        <div class="col-md-4 row">
+        <div class="col-md-4">
 
             <div class="card card-info">
                 <div class="card-header">
