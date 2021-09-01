@@ -556,5 +556,17 @@
             }).buttons()
             .container()
             .appendTo('.col-md-6:eq(0)');
+
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+            if (e.target.hash === '#teams') {
+                $("#team-table").DataTable().columns.adjust().draw()
+            }
+            if (e.target.hash === '#presence') {
+                $("#presence-table").DataTable().columns.adjust().draw()
+            }
+            if (e.target.hash === '#presences') {
+                $("#task-table").DataTable().columns.adjust().draw()
+            }
+        })
     </script>
 @endsection
