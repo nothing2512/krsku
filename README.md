@@ -13,6 +13,16 @@ KrsKu is an application for college student to manage their courses, tasks, sche
 ## Running
 copy .env.example to .env and setup your server configuration
 
+- Using Docker
+  - requirements:
+    - [Docker](https://www.docker.com/)
+    - [Docker Compose](https://docs.docker.com/compose/)
+  - open file .env, change `WEB_SERVER` to `artisan`
+  - run using command line
+  ```shell
+  > docker-compose up -d --build
+  > docker-compose start
+  ```
 - Using Apache
   - copy root project to your web server document root folder
   - open file .env, change `WEB_SERVER` to `apache` or `docker` or `nginx`
