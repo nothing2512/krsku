@@ -1,0 +1,10 @@
+version: '3'
+services:
+    krsku:
+        image: php:7.4-fpm
+        working_dir: /app
+        command: bash -c "./install.sh"
+        volumes:
+            - .:/app
+        ports:
+            - "3333:3333"

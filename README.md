@@ -23,6 +23,7 @@ copy .env.example to .env and setup your server configuration
   > docker-compose up -d --build
   > docker-compose start
   ```
+  - access the website through a browser with the url http://localhost:3333
 - Using Apache
   - copy root project to your web server document root folder
   - open file .env, change `WEB_SERVER` to `apache` or `docker` or `nginx`
