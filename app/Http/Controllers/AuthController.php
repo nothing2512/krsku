@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Setting;
 use App\Models\User;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -21,7 +20,7 @@ class AuthController extends Controller
         $user = User::query()->create($request->all());
         user($user);
 
-        Setting::query()->create([ "userId" => $user->id ]);
+        Setting::query()->create(["userId" => $user->id]);
 
         return redirect()->route("dashboard");
     }
@@ -39,7 +38,9 @@ class AuthController extends Controller
 
         user($user);
 
-        return redirect()->route("dashboard");
+        $oldRoute = $request->input("route");
+
+        return $oldRoute == null ? redirect()->route("dashboard") : redirect($oldRoute);
     }
 
     function logout()

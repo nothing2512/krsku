@@ -21,8 +21,14 @@ class Authenticate extends Middleware
         $requireAuth = $guards[0] == "true";
         $user = user();
 
-        if ($requireAuth && $user == null) return redirect()->route("login");
-        else if (!$requireAuth && $user != null) return redirect()->route("dashboard");
+        if ($requireAuth && $user == null) {
+            $oldRoute = $request->route()->getName();
+            $oldParameter = $request->route()->parameters();
+
+            session()->flash("route", route($oldRoute, $oldParameter));
+
+            return redirect()->route("login");
+        } else if (!$requireAuth && $user != null) return redirect()->route("dashboard");
 
         return $next($request);
     }

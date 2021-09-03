@@ -33,6 +33,9 @@
 
             <form action="{{ route("api.login") }}" method="post" autocomplete="off">
                 @csrf
+                @if(session()->has("route"))
+                    <input type="hidden" name="route" value="{{ session()->get('route') }}">
+                @endif
                 <div class="input-group mb-3">
                     <input type="number" class="form-control" placeholder="Nim" name="nim">
                     <div class="input-group-append">

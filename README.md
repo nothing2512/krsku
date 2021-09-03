@@ -39,12 +39,11 @@ copy .env.example to .env and setup your server configuration
 Notes: before running web apps, please create database, and run [migration](https://laravel.com/docs/8.x/migrations) first.
 see: [Migration Docs](https://laravel.com/docs/8.x/migrations)
 
-## Demonstration videos
-[![Demonstration videos](https://img.youtube.com/vi/jXtLBd3y_f8/0.jpg)](https://www.youtube.com/watch?v=jXtLBd3y_f8)
-
-
-## Warning !!
-This application is currently under development which in the future will be able to manage schools, teachers and students so that it can be integrated with the existing system in each school.
+## Development Plans
+This application is for individual usage, below are the feature in progress:
+  - Make Course Teams with other student
+  - Adding Teacher role for courses
+  - Integrating every courses with schools
 
 ## License
 
